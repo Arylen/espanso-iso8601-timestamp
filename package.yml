@@ -7,7 +7,7 @@ matches:
         type: shell
         params:
           cmd: python3 -c "from datetime import datetime, timezone; print(datetime.now(timezone.utc).isoformat())"
-  # Just grab the chrono one.
+  # Just grab the chrono one, local timezone.
   - trigger: ":iso"
     replace: "{{iso}}"
     vars:
